@@ -5,12 +5,14 @@ import { motion } from 'framer-motion';
 
 function confirmRedirect(url) {
     return function(event) {
-        event.preventDefault();
         if (window.confirm(`¿Deseas ir a ${url}?`)) {
-            window.location.href = url;
+            window.open(url, '_blank');
+        } else {
+            event.preventDefault();
         }
     }
 }
+
 
 const Projects = (props) => {
 
@@ -45,8 +47,8 @@ const Projects = (props) => {
                                     <p>Réplica de Netflix, con auth y db de Firebase</p>
                                 </div>
                                 <div className='buttons-project'>
-                                    <a href="https://tenflix-react.netlify.app/" onClick={confirmRedirect("https://tenflix-react.netlify.app/")}><FaChrome className='hover:scale-110 hover:text-primary'/></a>
-                                    <a href="https://github.com/davidFCDev/tenflix-api-react" onClick={confirmRedirect("https://github.com/davidFCDev/tenflix-api-react")}><FaGithub className='hover:scale-110 hover:text-primary'/></a>
+                                    <a onClick={confirmRedirect("https://tenflix-react.netlify.app/")} ><FaChrome className='hover:scale-110 hover:text-primary'/></a>
+                                    <a onClick={confirmRedirect("https://github.com/davidFCDev/tenflix-api-react")} ><FaGithub className='hover:scale-110 hover:text-primary'/></a>
                                 </div>
                             </div>
                         </motion.div>
@@ -64,8 +66,8 @@ const Projects = (props) => {
                                         <p>Aplicación simulando el menú de PS5</p>
                                     </div>
                                     <div className='buttons-project'>
-                                        <a href="https://menu-ps5.netlify.app/" onClick={confirmRedirect("https://menu-ps5.netlify.app/")}><FaChrome className='hover:scale-110 hover:text-primary'/></a>
-                                        <a href="https://github.com/davidFCDev/menu-ps5-react" onClick={confirmRedirect("https://github.com/davidFCDev/menu-ps5-react")}><FaGithub className='hover:scale-110 hover:text-primary'/></a>
+                                        <a onClick={confirmRedirect("https://menu-ps5.netlify.app/")}><FaChrome className='hover:scale-110 hover:text-primary'/></a>
+                                        <a onClick={confirmRedirect("https://github.com/davidFCDev/menu-ps5-react")}><FaGithub className='hover:scale-110 hover:text-primary'/></a>
                                     </div>
                                 </div>
                             </motion.div>
@@ -83,8 +85,8 @@ const Projects = (props) => {
                                         <p>Página web deportiva para pleno uso</p>
                                     </div>
                                     <div className='buttons-project'>
-                                        <a href="https://sport-web.netlify.app/" onClick={confirmRedirect("https://sport-web.netlify.app/")}><FaChrome className='hover:scale-110 hover:text-primary'/></a>
-                                        <a href="https://github.com/davidFCDev/sport-web-react" onClick={confirmRedirect("https://github.com/davidFCDev/sport-web-react")}><FaGithub className='hover:scale-110 hover:text-primary'/></a>
+                                        <a onClick={confirmRedirect("https://sport-web.netlify.app/")}><FaChrome className='hover:scale-110 hover:text-primary'/></a>
+                                        <a onClick={confirmRedirect("https://github.com/davidFCDev/sport-web-react")}><FaGithub className='hover:scale-110 hover:text-primary'/></a>
                                     </div>
                                 </div>
                             </motion.div>
@@ -102,8 +104,8 @@ const Projects = (props) => {
                                         <p>Aplicación de compras y gestor de usuarios</p>
                                     </div>
                                     <div className='buttons-project'>
-                                        <a href="https://fir-shopping-8e43d.firebaseapp.com/" onClick={confirmRedirect("https://fir-shopping-8e43d.firebaseapp.com/")}><FaChrome className='hover:scale-110 hover:text-primary'/></a>
-                                        <a href="https://github.com/davidFCDev/app-react-firebase" onClick={confirmRedirect("https://github.com/davidFCDev/app-react-firebase")}><FaGithub className='hover:scale-110 hover:text-primary'/></a>
+                                        <a onClick={confirmRedirect("https://fir-shopping-8e43d.firebaseapp.com/")}><FaChrome className='hover:scale-110 hover:text-primary'/></a>
+                                        <a onClick={confirmRedirect("https://github.com/davidFCDev/app-react-firebase")}><FaGithub className='hover:scale-110 hover:text-primary'/></a>
                                     </div>
                                 </div>
                             </motion.div>
@@ -121,8 +123,8 @@ const Projects = (props) => {
                                         <p>Minijuego básico de emparejados</p>
                                     </div>
                                     <div className='buttons-project'>
-                                        <a href="https://minigame-js.netlify.app" onClick={confirmRedirect("https://minigame-js.netlify.app")}><FaChrome className='hover:scale-110 hover:text-primary'/></a>
-                                        <a href="https://github.com/davidFCDev/mini-game-javascript" onClick={confirmRedirect("https://github.com/davidFCDev/mini-game-javascript")}><FaGithub className='hover:scale-110 hover:text-primary'/></a>
+                                        <a onClick={confirmRedirect("https://minigame-js.netlify.app")}><FaChrome className='hover:scale-110 hover:text-primary'/></a>
+                                        <a onClick={confirmRedirect("https://github.com/davidFCDev/mini-game-javascript")}><FaGithub className='hover:scale-110 hover:text-primary'/></a>
                                     </div>
                                 </div>
                             </motion.div>
@@ -140,8 +142,8 @@ const Projects = (props) => {
                                         <p>Landing page con React y TailwindCss</p>
                                     </div>
                                     <div className='buttons-project'>
-                                        <a href="https://modern-landingpage-react.netlify.app" onClick={confirmRedirect("https://modern-landingpage-react.netlify.app")}><FaChrome className='hover:scale-110 hover:text-primary'/></a>
-                                        <a href="https://github.com/davidFCDev/modern-landing-page" onClick={confirmRedirect("https://github.com/davidFCDev/modern-landing-page")}><FaGithub className='hover:scale-110 hover:text-primary'/></a>
+                                        <a onClick={confirmRedirect("https://modern-landingpage-react.netlify.app")}><FaChrome className='hover:scale-110 hover:text-primary'/></a>
+                                        <a onClick={confirmRedirect("https://github.com/davidFCDev/modern-landing-page")}><FaGithub className='hover:scale-110 hover:text-primary'/></a>
                                     </div>
                                 </div>
                             </motion.div>

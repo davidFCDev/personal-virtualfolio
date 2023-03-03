@@ -20,7 +20,7 @@
 }
 
 .project:hover {
-    box-shadow: 0 0 10px #7c8184;
+    box-shadow: 0 0 3px #7c8184;
     transition: 0.1s;
     cursor: pointer;
 }
@@ -61,7 +61,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     font-size: 35px;
     gap: 10px;
 }

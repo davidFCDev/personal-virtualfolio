@@ -25,7 +25,7 @@ function App() {
 
     window.addEventListener('scroll', handleScroll)
 
-    const timeoutId = setTimeout(() => setIsLoading(false), 1500)
+    const timeoutId = setTimeout(() => setIsLoading(false), 2480)
 
     return () => {
       window.removeEventListener('scroll', handleScroll)

@@ -38,12 +38,12 @@ const Navbar = () => {
                 </a>
                 </li>
                 <li className="menu-item">
-                <a href="https://www.linkedin.com/in/david-fernandez-comesa%C3%B1a/" className="menu-link">
+                <a href="https://www.linkedin.com/in/david-fernandez-comesa%C3%B1a/" target="_blank" rel="noopener noreferrer" className="menu-link">
                     <FaLinkedin />
                 </a>
                 </li>
-                <li className="menu-item">
-                <a href="https://github.com/davidFCDev" className="menu-link">
+                <li className="menu-item" target="_blank" >
+                <a href="https://github.com/davidFCDev" target="_blank" rel="noopener noreferrer" className="menu-link">
                     <FaGithubAlt />
                 </a>
                 </li>

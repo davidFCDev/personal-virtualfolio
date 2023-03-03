@@ -1,0 +1,49 @@
+.h1-cl {
+    color: #314047;
+    font: normal 70px Varela Round, sans-serif;
+    height: 70px;
+    left: 0;
+    letter-spacing: 5px;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+    animation: move linear 6000ms infinite;
+}
+
+@keyframes move {
+    0% {
+        text-shadow: 4px -4px 0 #FD2155,
+        3px -3px 0 #FD2155, 2px -2px 0 #FD2155,
+        1px -1px 0 #FD2155, -4px 4px 0 #05FDD8,
+        -3px 3px 0 #05FDD8, -2px 2px 0 #05FDD8,
+        -1px 1px 0 #05FDD8;
+    }
+    25% {
+        text-shadow: -4px -4px 0 #05FDD8,
+        -3px -3px 0 #05FDD8, -2px -2px 0 #05FDD8,
+        -1px -1px 0 #05FDD8, 4px 4px 0 #FD2155,
+        3px 3px 0 #FD2155, 2px 2px 0 #FD2155,
+        1px 1px 0 #FD2155;
+    }
+    50% {
+        text-shadow: -4px 4px 0 #FD2155,
+        -3px 3px 0 #FD2155, -2px 2px 0 #FD2155,
+        -1px 1px 0 #FD2155, 4px -4px 0 #05FDD8,
+        3px -3px 0 #05FDD8, 2px -2px 0 #05FDD8,
+        1px -1px 0 #05FDD8;
+    }
+    75% {
+        text-shadow: 4px 4px 0 #05FDD8,
+        3px 3px 0 #05FDD8, 2px 2px 0 #05FDD8,
+        1px 1px 0 #05FDD8, -4px -4px 0 #FD2155,
+        -3px -3px 0 #FD2155, -2px -2px 0 #FD2155,
+        -1px -1px 0 #FD2155;
+    }
+    100% {
+        text-shadow: 4px -4px 0 #FD2155,
+        3px -3px 0 #FD2155, 2px -2px 0 #FD2155,
+        1px -1px 0 #FD2155, -4px 4px 0 #05FDD8,
+        -3px 3px 0 #05FDD8, -2px 2px 0 #05FDD8,
+        -1px 1px 0 #05FDD8;
+    }
+}
