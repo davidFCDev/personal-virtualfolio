@@ -39,7 +39,7 @@ const Projects = (props) => {
                             initial={{ opacity: 0, x: 50 }}
                             animate={inView1 ? animationOptions : {}}>
                             <div className='img-project-container'>
-                                <img src='/images/proyecto-2.png' alt='img' />
+                                <img src='/images/proyecto-2.webp' alt='img' />
                             </div>
                             <div className='text-project-container'>
                                 <div className='text-wrap'>
@@ -58,7 +58,7 @@ const Projects = (props) => {
                                 initial={{ opacity: 0, x:50 }}
                                 animate={inView2 ? animationOptions : {}}>
                                 <div className='img-project-container'>
-                                    <img src='/images/proyecto-3.jpg' alt='img' />
+                                    <img src='/images/proyecto-3.webp' alt='img' />
                                 </div>
                                 <div className='text-project-container'>
                                     <div className='text-wrap'>
@@ -77,7 +77,7 @@ const Projects = (props) => {
                                 initial={{ opacity: 0, x:50 }}
                                 animate={inView3 ? animationOptions : {}}>
                                 <div className='img-project-container'>
-                                    <img src='/images/proyecto-1.png' alt='img' />
+                                    <img src='/images/proyecto-1.webp' alt='img' />
                                 </div>
                                 <div className='text-project-container'>
                                     <div className='text-wrap'>
@@ -96,7 +96,7 @@ const Projects = (props) => {
                                 initial={{ opacity: 0, x:50 }}
                                 animate={inView4 ? animationOptions : {}}>
                                 <div className='img-project-container'>
-                                    <img src='/images/proyecto-5.jpg' alt='img' />
+                                    <img src='/images/proyecto-5.webp' alt='img' />
                                 </div>
                                 <div className='text-project-container'>
                                     <div className='text-wrap'>
@@ -115,7 +115,7 @@ const Projects = (props) => {
                                 initial={{ opacity: 0, x:50 }}
                                 animate={inView5 ? animationOptions : {}}>
                                 <div className='img-project-container'>
-                                    <img src='/images/proyecto-6.jpg' alt='img' />
+                                    <img src='/images/proyecto-6.webp' alt='img' />
                                 </div>
                                 <div className='text-project-container'>
                                     <div className='text-wrap'>
@@ -134,7 +134,7 @@ const Projects = (props) => {
                                 initial={{ opacity: 0, x:50 }}
                                 animate={inView6 ? animationOptions : {}}>
                                 <div className='img-project-container'>
-                                    <img src='/images/proyecto-4.jpg' alt='img' />
+                                    <img src='/images/proyecto-4.webp' alt='img' />
                                 </div>
                                 <div className='text-project-container'>
                                     <div className='text-wrap'>
