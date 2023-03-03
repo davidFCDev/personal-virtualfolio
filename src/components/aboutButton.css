@@ -1,0 +1,63 @@
+.btn-about-web {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    border: solid 2px black;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-size: 15px;
+    background-color: #05FDD8;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.btn-about-web:active {
+    transform: scale(0.9);
+    transition: all 100ms ease;
+}
+
+.btn-about-web svg {
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.play {
+    transition: all 0.5s ease;
+    transition-delay: 300ms;
+}
+
+.btn-about-web:hover svg {
+    transform: scale(3) translate(50%);
+}
+
+.now {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.btn-about-web:hover .now {
+    transform: translateX(10px);
+    transition-delay: 300ms;
+}
+
+.btn-about-web:hover .play {
+    transform: translateX(200%);
+    transition-delay: 300ms;
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1050px) {
+
+}

@@ -1,0 +1,154 @@
+.skills {
+    width: 100%;
+    margin: 3rem 0rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 0;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.studies-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.studies-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.skills-list img {
+    width: 100px;
+}
+
+.skills-list img:hover {
+    transform: scale(1.1);
+    transition: 0.1;
+}
+
+.card {
+    width: 350px;
+    height: 80px;
+    background: #263136;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+    padding: 0.5rem;
+    margin-left: 10px;
+    border-radius: 10px;
+    background: linear-gradient(#000000, #010101a2);
+}
+
+.card:hover > .img {
+    transition: 0.5s ease-in-out;
+    background: linear-gradient(#42555d, #303F45);
+}
+
+.textBox {
+    width: calc(100% - 90px);
+    margin-left: 10px;
+    color: white;
+    font-family: 'Poppins' sans-serif;
+}
+
+.textBox .p {
+    font-size: 13px;
+}
+
+.textContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textContent .span {
+    font-size: 10px;
+}
+
+.textContent .h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.textContent .p {
+    font-size: 1px;
+    font-weight: lighter;
+}
+
+.fade-in {
+    position: relative;
+    height: 50px; 
+}
+
+.fade-in img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.fade-in img.visible {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 480px) {
+    .skills {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 8rem;
+    }
+    .skills-list img {
+        width: 80px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1050px) {
+    .skills {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .skills-list img {
+        width: 80px;
+    }
+    .card {
+        width: 270px;
+        height: 70px;
+    }
+    .card .p {
+        font-size: 11px;
+    }
+    .card .span {
+        font-size: 8px;
+    }
+}
+
+

@@ -1,0 +1,101 @@
+.page-portfolio {
+    margin: 3rem 0rem;
+    position: relative;
+    
+}
+
+.container-portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+.list-portfolio {
+    gap: 2rem;
+}
+
+.project {
+    width: 350px;
+}
+
+.project:hover {
+    box-shadow: 0 0 10px #7c8184;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.img-project-container {
+    background-color: #1e262aa5;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-project-container img {
+    padding: 0.7rem;
+    border-radius: 18px;
+}
+
+.text-project-container {
+    height: 100px;
+    background-color: #1e262aa5;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 1rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.text-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.2rem;
+}
+
+.buttons-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 35px;
+    gap: 10px;
+}
+
+.text-project-container h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.text-project-container p {
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 480px) {
+    .page-portfolio {
+        margin-bottom: 5rem;
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1050px) {
+    .project {
+        width: 280px;
+    }
+    .text-project-container {
+        height: 120px;
+    }
+    .text-project-container h2 {
+        font-size: 17px;
+        padding: 0rem 0.5rem;
+    }
+    .text-project-container p {
+        font-size: 12px;
+        padding: 0rem 0.5rem;
+    }
+}
+
