@@ -10,7 +10,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 9rem 0;
+    margin:2rem 0 10rem 0;
 }
 
 .about-container {
@@ -25,6 +25,9 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .about {
+        margin:1rem 0 6rem 0;
+    }
     .about-container {
         height: 680px;
         display: flex;
@@ -41,6 +44,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 1050px) {
+    .about {
+        margin:3rem 0 7rem 0;
+    }
     .about-container {
         width: 75%;
     }
@@ -55,4 +61,5 @@
         height: 220px;
     }
 }
+
 
