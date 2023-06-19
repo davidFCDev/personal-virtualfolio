@@ -98,6 +98,37 @@ const Projects = props => {
 							</div>
 						</motion.div>
 					</li>
+					<li className='project' ref={ref7}>
+						<motion.div
+							initial={{ opacity: 0, x: 50 }}
+							animate={inView7 ? animationOptions : {}}
+						>
+							<div className='img-project-container'>
+								<img src='/images/macros.webp' alt='img' />
+							</div>
+							<div className='text-project-container'>
+								<div className='text-wrap'>
+									<h2>Proyecto macros React</h2>
+									<p>
+										Aplicación de macros e ingredientes. No responsive. Necesita
+										api_key.
+									</p>
+								</div>
+								<div className='buttons-project'>
+									<a onClick={confirmRedirect('https://macrofit.netlify.app/')}>
+										<FaChrome className='hover:scale-110 hover:text-primary' />
+									</a>
+									<a
+										onClick={confirmRedirect(
+											'https://github.com/davidFCDev/macrofit-react-app'
+										)}
+									>
+										<FaGithub className='hover:scale-110 hover:text-primary' />
+									</a>
+								</div>
+							</div>
+						</motion.div>
+					</li>
 					<li className='project' ref={ref2}>
 						<motion.div
 							initial={{ opacity: 0, x: 50 }}
@@ -244,36 +275,6 @@ const Projects = props => {
 									<a
 										onClick={confirmRedirect(
 											'https://github.com/davidFCDev/app-react-firebase'
-										)}
-									>
-										<FaGithub className='hover:scale-110 hover:text-primary' />
-									</a>
-								</div>
-							</div>
-						</motion.div>
-					</li>
-					<li className='project' ref={ref7}>
-						<motion.div
-							initial={{ opacity: 0, x: 50 }}
-							animate={inView7 ? animationOptions : {}}
-						>
-							<div className='img-project-container'>
-								<img src='/images/minigame.webp' alt='img' />
-							</div>
-							<div className='text-project-container'>
-								<div className='text-wrap'>
-									<h2>Proyecto javascript</h2>
-									<p>Minijuego básico de emparejados</p>
-								</div>
-								<div className='buttons-project'>
-									<a
-										onClick={confirmRedirect('https://minigame-js.netlify.app')}
-									>
-										<FaChrome className='hover:scale-110 hover:text-primary' />
-									</a>
-									<a
-										onClick={confirmRedirect(
-											'https://github.com/davidFCDev/mini-game-javascript'
 										)}
 									>
 										<FaGithub className='hover:scale-110 hover:text-primary' />
