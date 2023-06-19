@@ -28,6 +28,7 @@ const Projects = props => {
 	const [ref6, inView6] = useInView({ threshold: 0.5, triggerOnce: true });
 	const [ref7, inView7] = useInView({ threshold: 0.5, triggerOnce: true });
 	const [ref8, inView8] = useInView({ threshold: 0.5, triggerOnce: true });
+	const [ref9, inView9] = useInView({ threshold: 0.5, triggerOnce: true });
 
 	return (
 		<div className='vg-page page-portfolio' id='portfolio'>
@@ -37,6 +38,38 @@ const Projects = props => {
 					<b>&lt;/h2&gt;&nbsp;</b>
 				</h1>
 				<ul className='list-portfolio grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
+					<li className='project' ref={ref9}>
+						<motion.div
+							initial={{ opacity: 0, x: 50 }}
+							animate={inView9 ? animationOptions : {}}
+						>
+							<div className='img-project-container'>
+								<img src='/images/foro.webp' alt='img' />
+							</div>
+							<div className='text-project-container'>
+								<div className='text-wrap'>
+									<h2>Foro R&M React</h2>
+									<p>Context, api, authentication, CRUD...</p>
+								</div>
+								<div className='buttons-project'>
+									<a
+										onClick={confirmRedirect(
+											'https://fororickymorty.netlify.app/'
+										)}
+									>
+										<FaChrome className='hover:scale-110 hover:text-primary' />
+									</a>
+									<a
+										onClick={confirmRedirect(
+											'https://github.com/davidFCDev/foro-reactjs'
+										)}
+									>
+										<FaGithub className='hover:scale-110 hover:text-primary' />
+									</a>
+								</div>
+							</div>
+						</motion.div>
+					</li>
 					<li className='project' ref={ref1}>
 						<motion.div
 							initial={{ opacity: 0, x: 50 }}
