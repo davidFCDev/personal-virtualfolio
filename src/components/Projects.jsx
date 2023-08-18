@@ -38,6 +38,34 @@ const Projects = props => {
 					<b>&lt;/h2&gt;&nbsp;</b>
 				</h1>
 				<ul className='list-portfolio grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
+					<li className='project' ref={ref8}>
+						<motion.div
+							initial={{ opacity: 0, x: 50 }}
+							animate={inView8 ? animationOptions : {}}
+						>
+							<div className='img-project-container'>
+								<img src='/images/basecola.webp' alt='img' />
+							</div>
+							<div className='text-project-container'>
+								<div className='text-wrap'>
+									<h2>Landing page Crypto</h2>
+									<p>Web crypto con React</p>
+								</div>
+								<div className='buttons-project'>
+									<a onClick={confirmRedirect('https://basecola.com/')}>
+										<FaChrome className='hover:scale-110 hover:text-primary' />
+									</a>
+									<a
+										onClick={confirmRedirect(
+											'https://github.com/davidFCDev/base-cola'
+										)}
+									>
+										<FaGithub className='hover:scale-110 hover:text-primary' />
+									</a>
+								</div>
+							</div>
+						</motion.div>
+					</li>
 					<li className='project' ref={ref9}>
 						<motion.div
 							initial={{ opacity: 0, x: 50 }}
@@ -275,38 +303,6 @@ const Projects = props => {
 									<a
 										onClick={confirmRedirect(
 											'https://github.com/davidFCDev/app-react-firebase'
-										)}
-									>
-										<FaGithub className='hover:scale-110 hover:text-primary' />
-									</a>
-								</div>
-							</div>
-						</motion.div>
-					</li>
-					<li className='project' ref={ref8}>
-						<motion.div
-							initial={{ opacity: 0, x: 50 }}
-							animate={inView8 ? animationOptions : {}}
-						>
-							<div className='img-project-container'>
-								<img src='/images/landing.webp' alt='img' />
-							</div>
-							<div className='text-project-container'>
-								<div className='text-wrap'>
-									<h2>Landing page React</h2>
-									<p>Landing page con React y TailwindCss</p>
-								</div>
-								<div className='buttons-project'>
-									<a
-										onClick={confirmRedirect(
-											'https://modern-landingpage-react.netlify.app'
-										)}
-									>
-										<FaChrome className='hover:scale-110 hover:text-primary' />
-									</a>
-									<a
-										onClick={confirmRedirect(
-											'https://github.com/davidFCDev/modern-landing-page'
 										)}
 									>
 										<FaGithub className='hover:scale-110 hover:text-primary' />
