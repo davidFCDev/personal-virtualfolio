@@ -14,13 +14,14 @@
 }
 
 .menu-link {
-    background: #263136;
+    background: #143746;
     color: white;
     display: flex;
     border-radius: 5px;
     font-size: 40px;
     padding: 0.7rem;
-    border: #4c636e solid 1px;
+    /* border: #204758 solid 1px; */
+    box-shadow: 0 0 10px #111d23;
 }
 
 .menu-link:hover {

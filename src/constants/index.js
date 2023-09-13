@@ -39,14 +39,14 @@ const iconoPython =
 
 export const icons = [
 	iconoReact,
+	iconoAngular,
 	iconoJavascript,
+	iconoTypescript,
 	iconoHtml,
 	iconoCss,
 	iconoTailwind,
 	iconoSass,
-	iconoTypescript,
-	iconoAngular,
 	iconoGit,
 	iconoGpt,
-    iconoPython,
+	iconoPython,
 ];

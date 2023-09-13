@@ -20,13 +20,13 @@
 }
 
 .project:hover {
-    box-shadow: 0 0 3px #7c8184;
+    box-shadow: 0 0 3px #647a88;
     transition: 0.1s;
     cursor: pointer;
 }
 
 .img-project-container {
-    background-color: #1e262aa5;
+    background-color: #143746;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     display: flex;
@@ -41,7 +41,7 @@
 
 .text-project-container {
     height: 100px;
-    background-color: #1e262aa5;
+    background-color: #143746;
     display: flex;
     justify-content: space-between;
     padding: 0.2rem 1rem;

@@ -50,7 +50,7 @@ const Skills = () => {
 					<b>&lt;h2&gt;&nbsp;</b>&nbsp;&nbsp;Tecnologías&nbsp;&nbsp;
 					<b>&lt;/h2&gt;&nbsp;</b>
 				</h1>
-				<ul className='skills-list grid grid-cols-3 gap-8 sm:gap-2 md:gap-16'>
+				<ul className='skills-list grid grid-cols-3 gap-8 sm:gap-2 md:gap-12'>
 					{icons.map((icon, i) => (
 						<li key={i}>
 							<img src={icon} alt='logo' />
@@ -70,7 +70,7 @@ const Skills = () => {
 					>
 						<li className='card' ref={ref0}>
 							<img
-								src='https://static.vecteezy.com/system/resources/previews/022/227/367/original/openai-chatgpt-logo-icon-free-png.png'
+								src='/images/iconoAngular.png'
 								alt='typescript'
 								className='img'
 							/>
@@ -82,7 +82,7 @@ const Skills = () => {
 										<TbPoint className='text-xl text-green-400' />
 									</span>
 								</div>
-								<p className='p'>Python, AI, BBDD y más React </p>
+								<p className='p'>Angular</p>
 							</div>
 						</li>
 					</motion.div>
@@ -99,7 +99,7 @@ const Skills = () => {
 							<div className='textBox'>
 								<div className='textContent'>
 									<p className='h1'>Curso Typescript</p>
-									<span className='span'>6 month ago</span>
+									<span className='span'>8 month ago</span>
 								</div>
 								<p className='p'>Importancia tipado de datos</p>
 							</div>
@@ -114,7 +114,7 @@ const Skills = () => {
 							<div className='textBox'>
 								<div className='textContent'>
 									<p className='h1'>Curso React</p>
-									<span className='span'>10 month ago</span>
+									<span className='span'>1 year ago</span>
 								</div>
 								<p className='p'>Estados, hooks, Firebase, jest...</p>
 							</div>
@@ -129,7 +129,7 @@ const Skills = () => {
 							<div className='textBox'>
 								<div className='textContent'>
 									<p className='h1'>Curso Javascript</p>
-									<span className='span'>11 month ago</span>
+									<span className='span'>14 month ago</span>
 								</div>
 								<p className='p'>Eventos, persistencia de datos...</p>
 							</div>
@@ -151,7 +151,7 @@ const Skills = () => {
 							<div className='textBox'>
 								<div className='textContent'>
 									<p className='h1'>Curso HTML/CSS</p>
-									<span className='span'>1 year ago</span>
+									<span className='span'>16 month ago</span>
 								</div>
 								<p className='p'>Bootstrap, sass, Tailwind, animaciones.</p>
 							</div>

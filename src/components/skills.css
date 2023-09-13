@@ -29,18 +29,18 @@
 
 
 .skills-list img {
-    width: 100px;
+    width: 90px;
 }
 
 .skills-list img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 0.1;
 }
 
 .card {
     width: 350px;
     height: 80px;
-    background: #263136;
+    background: #143746;
     border-radius: 20px;
     display: flex;
     align-items: center;
