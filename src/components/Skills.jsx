@@ -47,7 +47,7 @@ const Skills = () => {
 		<section id='skills' className='skills'>
 			<div className='skills-container'>
 				<h1 className='section-ttl text-center '>
-					<b>&lt;h2&gt;&nbsp;</b>&nbsp;&nbsp;Tecnologías&nbsp;&nbsp;
+					<b>&lt;h2&gt;&nbsp;</b>&nbsp;&nbsp;Technologies&nbsp;&nbsp;
 					<b>&lt;/h2&gt;&nbsp;</b>
 				</h1>
 				<ul className='skills-list grid grid-cols-3 gap-8 sm:gap-2 md:gap-12'>
@@ -60,7 +60,7 @@ const Skills = () => {
 			</div>
 			<div className='studies-container'>
 				<h1 className='section-ttl text-center '>
-					<b>&lt;h2&gt;&nbsp;</b>&nbsp;&nbsp;Estudios&nbsp;&nbsp;
+					<b>&lt;h2&gt;&nbsp;</b>&nbsp;&nbsp;Studies&nbsp;&nbsp;
 					<b>&lt;/h2&gt;&nbsp;</b>
 				</h1>
 				<ul className='studies-list'>
@@ -76,7 +76,7 @@ const Skills = () => {
 							/>
 							<div className='textBox'>
 								<div className='textContent'>
-									<p className='h1'>Actualmente:</p>
+									<p className='h1'>At the moment:</p>
 									<span className='span flex flex-row-reverse items-center'>
 										live
 										<TbPoint className='text-xl text-green-400' />
@@ -98,10 +98,10 @@ const Skills = () => {
 							/>
 							<div className='textBox'>
 								<div className='textContent'>
-									<p className='h1'>Curso Typescript</p>
+									<p className='h1'>Typescript course</p>
 									<span className='span'>8 month ago</span>
 								</div>
-								<p className='p'>Importancia tipado de datos</p>
+								<p className='p'>Focus in data typing</p>
 							</div>
 						</li>
 					</motion.div>
@@ -113,10 +113,10 @@ const Skills = () => {
 							<img src='/images/iconoReact.png' alt='react' className='img' />
 							<div className='textBox'>
 								<div className='textContent'>
-									<p className='h1'>Curso React</p>
+									<p className='h1'>React course</p>
 									<span className='span'>1 year ago</span>
 								</div>
-								<p className='p'>Estados, hooks, Firebase, jest...</p>
+								<p className='p'>State, hooks, Firebase, jest...</p>
 							</div>
 						</li>
 					</motion.div>
@@ -128,10 +128,10 @@ const Skills = () => {
 							<img src='/images/iconoJavascript.png' alt='js' className='img' />
 							<div className='textBox'>
 								<div className='textContent'>
-									<p className='h1'>Curso Javascript</p>
+									<p className='h1'>Javascript course</p>
 									<span className='span'>14 month ago</span>
 								</div>
-								<p className='p'>Eventos, persistencia de datos...</p>
+								<p className='p'>Events, data persistence...</p>
 							</div>
 						</li>
 					</motion.div>
@@ -150,10 +150,10 @@ const Skills = () => {
 							/>
 							<div className='textBox'>
 								<div className='textContent'>
-									<p className='h1'>Curso HTML/CSS</p>
+									<p className='h1'>HTML/CSS course</p>
 									<span className='span'>16 month ago</span>
 								</div>
-								<p className='p'>Bootstrap, sass, Tailwind, animaciones.</p>
+								<p className='p'>Bootstrap, sass, Tailwind, animations.</p>
 							</div>
 						</li>
 					</motion.div>
@@ -165,7 +165,7 @@ const Skills = () => {
 							<img src='/images/iconoCiclo.png' alt='angular' className='img' />
 							<div className='textBox'>
 								<div className='textContent'>
-									<p className='h1 text-secondary'>Ciclo de DAW</p>
+									<p className='h1 text-secondary'>Prof. training DAW</p>
 									<span className='span'>8 years ago</span>
 								</div>
 								<p className='p'>IES Teis, Vigo, Galicia</p>

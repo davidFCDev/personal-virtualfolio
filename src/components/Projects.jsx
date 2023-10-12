@@ -6,7 +6,7 @@ import { PROJECTS } from '../constants/projects';
 
 function confirmRedirect(url) {
 	return function (event) {
-		if (window.confirm(`¿Deseas ir a ${url}?`)) {
+		if (window.confirm(`¿Do you want to access ${url}?`)) {
 			window.open(url, '_blank');
 		} else {
 			event.preventDefault();
@@ -25,7 +25,7 @@ const Projects = props => {
 		<div className='vg-page page-portfolio' id='portfolio'>
 			<div className='container-portfolio'>
 				<h1 className='section-ttl text-center wow fadeInUp'>
-					<b>&lt;h2&gt;&nbsp;</b>&nbsp;&nbsp;Proyectos&nbsp;&nbsp;
+					<b>&lt;h2&gt;&nbsp;</b>&nbsp;&nbsp;Projects&nbsp;&nbsp;
 					<b>&lt;/h2&gt;&nbsp;</b>
 				</h1>
 

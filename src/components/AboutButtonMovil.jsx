@@ -3,7 +3,7 @@ import './aboutButtonMovil.css';
 const AboutButtonMovil = () => {
 	return (
 		<button className='cta'>
-			<span className='span'>contacta</span>
+			<span className='span'>contact</span>
 			<span className='second'>
 				<svg
 					width='50px'
