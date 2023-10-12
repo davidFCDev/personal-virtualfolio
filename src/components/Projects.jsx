@@ -2,6 +2,7 @@ import './projects.css';
 import { FaChrome, FaGithub } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
+import { PROJECTS } from '../constants/projects';
 
 function confirmRedirect(url) {
 	return function (event) {
@@ -20,16 +21,6 @@ const Projects = props => {
 		transition: { duration: 1.2 },
 	};
 
-	const [ref1, inView1] = useInView({ threshold: 0.5, triggerOnce: true });
-	const [ref2, inView2] = useInView({ threshold: 0.5, triggerOnce: true });
-	const [ref3, inView3] = useInView({ threshold: 0.5, triggerOnce: true });
-	const [ref4, inView4] = useInView({ threshold: 0.5, triggerOnce: true });
-	const [ref5, inView5] = useInView({ threshold: 0.5, triggerOnce: true });
-	const [ref6, inView6] = useInView({ threshold: 0.5, triggerOnce: true });
-	const [ref7, inView7] = useInView({ threshold: 0.5, triggerOnce: true });
-	const [ref8, inView8] = useInView({ threshold: 0.5, triggerOnce: true });
-	const [ref9, inView9] = useInView({ threshold: 0.5, triggerOnce: true });
-
 	return (
 		<div className='vg-page page-portfolio' id='portfolio'>
 			<div className='container-portfolio'>
@@ -37,280 +28,40 @@ const Projects = props => {
 					<b>&lt;h2&gt;&nbsp;</b>&nbsp;&nbsp;Proyectos&nbsp;&nbsp;
 					<b>&lt;/h2&gt;&nbsp;</b>
 				</h1>
+
 				<ul className='list-portfolio grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
-					<li className='project' ref={ref8}>
-						<motion.div
-							initial={{ opacity: 0, x: 50 }}
-							animate={inView8 ? animationOptions : {}}
-						>
-							<div className='img-project-container'>
-								<img src='/images/basecola.webp' alt='img' />
-							</div>
-							<div className='text-project-container'>
-								<div className='text-wrap'>
-									<h2>Landing page Crypto</h2>
-									<p>Web crypto con React</p>
-								</div>
-								<div className='buttons-project'>
-									<a onClick={confirmRedirect('https://basecola.com/')}>
-										<FaChrome className='hover:scale-110 hover:text-primary' />
-									</a>
-									<a
-										onClick={confirmRedirect(
-											'https://github.com/davidFCDev/base-cola'
-										)}
-									>
-										<FaGithub className='hover:scale-110 hover:text-primary' />
-									</a>
-								</div>
-							</div>
-						</motion.div>
-					</li>
-					<li className='project' ref={ref9}>
-						<motion.div
-							initial={{ opacity: 0, x: 50 }}
-							animate={inView9 ? animationOptions : {}}
-						>
-							<div className='img-project-container'>
-								<img src='/images/foro.webp' alt='img' />
-							</div>
-							<div className='text-project-container'>
-								<div className='text-wrap'>
-									<h2>Foro R&M React</h2>
-									<p>Context, api, authentication, CRUD...</p>
-								</div>
-								<div className='buttons-project'>
-									<a
-										onClick={confirmRedirect(
-											'https://fororickymorty.netlify.app/'
-										)}
-									>
-										<FaChrome className='hover:scale-110 hover:text-primary' />
-									</a>
-									<a
-										onClick={confirmRedirect(
-											'https://github.com/davidFCDev/foro-reactjs'
-										)}
-									>
-										<FaGithub className='hover:scale-110 hover:text-primary' />
-									</a>
-								</div>
-							</div>
-						</motion.div>
-					</li>
-					<li className='project' ref={ref1}>
-						<motion.div
-							initial={{ opacity: 0, x: 50 }}
-							animate={inView1 ? animationOptions : {}}
-						>
-							<div className='img-project-container'>
-								<img src='/images/puzzle.webp' alt='img' />
-							</div>
-							<div className='text-project-container'>
-								<div className='text-wrap'>
-									<h2>Página web React</h2>
-									<p>Restaurante Puzzle Madriz</p>
-								</div>
-								<div className='buttons-project'>
-									<a onClick={confirmRedirect('https://puzzlemadriz.com/')}>
-										<FaChrome className='hover:scale-110 hover:text-primary' />
-									</a>
-									<a
-										onClick={confirmRedirect(
-											'https://github.com/davidFCDev/restaurant-react'
-										)}
-									>
-										<FaGithub className='hover:scale-110 hover:text-primary' />
-									</a>
-								</div>
-							</div>
-						</motion.div>
-					</li>
-					<li className='project' ref={ref7}>
-						<motion.div
-							initial={{ opacity: 0, x: 50 }}
-							animate={inView7 ? animationOptions : {}}
-						>
-							<div className='img-project-container'>
-								<img src='/images/macros.webp' alt='img' />
-							</div>
-							<div className='text-project-container'>
-								<div className='text-wrap'>
-									<h2>Proyecto macros React</h2>
-									<p>
-										Aplicación de macros e ingredientes. No responsive. Necesita
-										api_key.
-									</p>
-								</div>
-								<div className='buttons-project'>
-									<a onClick={confirmRedirect('https://macrofit.netlify.app/')}>
-										<FaChrome className='hover:scale-110 hover:text-primary' />
-									</a>
-									<a
-										onClick={confirmRedirect(
-											'https://github.com/davidFCDev/macrofit-react-app'
-										)}
-									>
-										<FaGithub className='hover:scale-110 hover:text-primary' />
-									</a>
-								</div>
-							</div>
-						</motion.div>
-					</li>
-					<li className='project' ref={ref2}>
-						<motion.div
-							initial={{ opacity: 0, x: 50 }}
-							animate={inView2 ? animationOptions : {}}
-						>
-							<div className='img-project-container'>
-								<img src='/images/prueba-tecnica.webp' alt='img' />
-							</div>
-							<div className='text-project-container'>
-								<div className='text-wrap'>
-									<h2>Prueba técnica React</h2>
-									<p>React-router, redux y api theMovieDB</p>
-								</div>
-								<div className='buttons-project'>
-									<a
-										onClick={confirmRedirect(
-											'https://prueba-reactjs.netlify.app/'
-										)}
-									>
-										<FaChrome className='hover:scale-110 hover:text-primary' />
-									</a>
-									<a
-										onClick={confirmRedirect(
-											'https://github.com/davidFCDev/Prueba-tecnica'
-										)}
-									>
-										<FaGithub className='hover:scale-110 hover:text-primary' />
-									</a>
-								</div>
-							</div>
-						</motion.div>
-					</li>
-					<li className='project' ref={ref3}>
-						<motion.div
-							initial={{ opacity: 0, x: 50 }}
-							animate={inView3 ? animationOptions : {}}
-						>
-							<div className='img-project-container'>
-								<img src='/images/tenflix.webp' alt='tenflix' />
-							</div>
-							<div className='text-project-container'>
-								<div className='text-wrap'>
-									<h2>Proyecto React</h2>
-									<p>Réplica de Netflix, con auth y db de Firebase</p>
-								</div>
-								<div className='buttons-project'>
-									<a
-										onClick={confirmRedirect(
-											'https://tenflix-react.netlify.app/'
-										)}
-									>
-										<FaChrome className='hover:scale-110 hover:text-primary' />
-									</a>
-									<a
-										onClick={confirmRedirect(
-											'https://github.com/davidFCDev/tenflix-api-react'
-										)}
-									>
-										<FaGithub className='hover:scale-110 hover:text-primary' />
-									</a>
-								</div>
-							</div>
-						</motion.div>
-					</li>
-					<li className='project' ref={ref4}>
-						<motion.div
-							initial={{ opacity: 0, x: 50 }}
-							animate={inView4 ? animationOptions : {}}
-						>
-							<div className='img-project-container'>
-								<img src='/images/ps5.webp' alt='ps5' />
-							</div>
-							<div className='text-project-container'>
-								<div className='text-wrap'>
-									<h2>Proyecto React</h2>
-									<p>Aplicación simulando el menú de PS5</p>
-								</div>
-								<div className='buttons-project'>
-									<a onClick={confirmRedirect('https://menu-ps5.netlify.app/')}>
-										<FaChrome className='hover:scale-110 hover:text-primary' />
-									</a>
-									<a
-										onClick={confirmRedirect(
-											'https://github.com/davidFCDev/menu-ps5-react'
-										)}
-									>
-										<FaGithub className='hover:scale-110 hover:text-primary' />
-									</a>
-								</div>
-							</div>
-						</motion.div>
-					</li>
-					<li className='project' ref={ref5}>
-						<motion.div
-							initial={{ opacity: 0, x: 50 }}
-							animate={inView5 ? animationOptions : {}}
-						>
-							<div className='img-project-container'>
-								<img src='/images/deportiva.webp' alt='deportiva' />
-							</div>
-							<div className='text-project-container'>
-								<div className='text-wrap'>
-									<h2>Proyecto React</h2>
-									<p>Página web deportiva para pleno uso</p>
-								</div>
-								<div className='buttons-project'>
-									<a
-										onClick={confirmRedirect('https://sport-web.netlify.app/')}
-									>
-										<FaChrome className='hover:scale-110 hover:text-primary' />
-									</a>
-									<a
-										onClick={confirmRedirect(
-											'https://github.com/davidFCDev/sport-web-react'
-										)}
-									>
-										<FaGithub className='hover:scale-110 hover:text-primary' />
-									</a>
-								</div>
-							</div>
-						</motion.div>
-					</li>
-					<li className='project' ref={ref6}>
-						<motion.div
-							initial={{ opacity: 0, x: 50 }}
-							animate={inView6 ? animationOptions : {}}
-						>
-							<div className='img-project-container'>
-								<img src='/images/ecommerce.webp' alt='img' />
-							</div>
-							<div className='text-project-container'>
-								<div className='text-wrap'>
-									<h2>eCommerce con React</h2>
-									<p>Aplicación de compras y gestor de usuarios</p>
-								</div>
-								<div className='buttons-project'>
-									<a
-										onClick={confirmRedirect(
-											'https://fir-shopping-8e43d.firebaseapp.com/'
-										)}
-									>
-										<FaChrome className='hover:scale-110 hover:text-primary' />
-									</a>
-									<a
-										onClick={confirmRedirect(
-											'https://github.com/davidFCDev/app-react-firebase'
-										)}
-									>
-										<FaGithub className='hover:scale-110 hover:text-primary' />
-									</a>
-								</div>
-							</div>
-						</motion.div>
-					</li>
+					{PROJECTS.map(project => {
+						const [ref, inView] = useInView({
+							threshold: 0.5,
+							triggerOnce: true,
+						});
+						return (
+							<li className='project' key={project.id} ref={ref}>
+								<motion.div
+									initial={{ opacity: 0, x: 50 }}
+									animate={inView ? animationOptions : {}}
+								>
+									<div className='img-project-container'>
+										<img src={project.image[0]} alt='img' />
+									</div>
+									<div className='text-project-container'>
+										<div className='text-wrap'>
+											<h2>{project.title}</h2>
+											<p>{project.description}</p>
+										</div>
+										<div className='buttons-project'>
+											<a onClick={confirmRedirect(`${project.web}`)}>
+												<FaChrome className='hover:scale-110 hover:text-primary' />
+											</a>
+											<a onClick={confirmRedirect(`${project.github}`)}>
+												<FaGithub className='hover:scale-110 hover:text-primary' />
+											</a>
+										</div>
+									</div>
+								</motion.div>
+							</li>
+						);
+					})}
 				</ul>
 			</div>
 		</div>
