@@ -3,6 +3,8 @@ import { FaChrome, FaGithub } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { PROJECTS } from '../constants/projects';
+import Swiper from 'swiper';
+import ImageSlider from './ImageSlider';
 
 function confirmRedirect(url) {
 	return function (event) {
@@ -14,7 +16,7 @@ function confirmRedirect(url) {
 	};
 }
 
-const Projects = props => {
+const Projects = () => {
 	const animationOptions = {
 		opacity: 1,
 		x: 0,
@@ -36,30 +38,31 @@ const Projects = props => {
 							triggerOnce: true,
 						});
 						return (
-							<li className='project' key={project.id} ref={ref}>
-								<motion.div
-									initial={{ opacity: 0, x: 50 }}
-									animate={inView ? animationOptions : {}}
-								>
-									<div className='img-project-container'>
-										<img src={project.image[0]} alt='img' />
+							<motion.li
+								initial={{ opacity: 0, x: 50 }}
+								animate={inView ? animationOptions : {}}
+								className='project'
+								key={project.id}
+								ref={ref}
+							>
+								<div className='img-project-container'>
+									<ImageSlider project={project} />
+								</div>
+								<div className='text-project-container'>
+									<div className='text-wrap'>
+										<h2>{project.title}</h2>
+										<p>{project.description}</p>
 									</div>
-									<div className='text-project-container'>
-										<div className='text-wrap'>
-											<h2>{project.title}</h2>
-											<p>{project.description}</p>
-										</div>
-										<div className='buttons-project'>
-											<a onClick={confirmRedirect(`${project.web}`)}>
-												<FaChrome className='hover:scale-110 hover:text-primary' />
-											</a>
-											<a onClick={confirmRedirect(`${project.github}`)}>
-												<FaGithub className='hover:scale-110 hover:text-primary' />
-											</a>
-										</div>
+									<div className='buttons-project'>
+										<a onClick={confirmRedirect(`${project.web}`)}>
+											<FaChrome className='hover:scale-110 hover:text-primary' />
+										</a>
+										<a onClick={confirmRedirect(`${project.github}`)}>
+											<FaGithub className='hover:scale-110 hover:text-primary' />
+										</a>
 									</div>
-								</motion.div>
-							</li>
+								</div>
+							</motion.li>
 						);
 					})}
 				</ul>

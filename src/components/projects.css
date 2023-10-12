@@ -17,26 +17,24 @@
 
 .project {
     width: 350px;
+    box-shadow: 0 0 3px #0d1012;
 }
 
 .project:hover {
-    box-shadow: 0 0 3px #647a88;
+    box-shadow: 0 0 3px #7892a1;
     transition: 0.1s;
     cursor: pointer;
 }
 
 .img-project-container {
     background-color: #143746;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .img-project-container img {
-    padding: 1rem;
-    border-radius: 18px;
+    padding-bottom: 0.2rem;
 }
 
 .text-project-container {
@@ -45,8 +43,6 @@
     display: flex;
     justify-content: space-between;
     padding: 0.2rem 1rem;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
 }
 
 .text-wrap {
