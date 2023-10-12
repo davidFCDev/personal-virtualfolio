@@ -3,7 +3,7 @@ import { FaChrome, FaGithub } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { PROJECTS } from '../constants/projects';
-import Swiper from 'swiper';
+
 import ImageSlider from './ImageSlider';
 
 function confirmRedirect(url) {

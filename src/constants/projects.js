@@ -4,8 +4,8 @@ export const PROJECTS = [
 		title: 'Static website React',
 		description: 'Puzzle Madriz restaurant',
 		image: [
-			'/images/puzzle2.webp',
 			'/images/puzzle.webp',
+			'/images/puzzle2.webp',
 			'/images/puzzle3.webp',
 		],
 		web: 'https://puzzlemadriz.com/',
