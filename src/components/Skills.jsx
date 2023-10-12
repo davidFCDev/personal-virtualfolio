@@ -1,5 +1,5 @@
 import './skills.css';
-import { icons } from '/src/constants/index.js';
+import { icons } from '/src/constants/icons.js';
 import { TbPoint } from 'react-icons/tb';
 import { useEffect, useState, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';

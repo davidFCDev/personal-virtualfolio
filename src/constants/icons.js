@@ -8,29 +8,6 @@ import iconoTypescript from '/images/iconoTypescript.png';
 import iconoAngular from '/images/iconoAngular.png';
 import iconoGit from '/images/iconoGit.png';
 
-export const audioList = [
-	{
-		title: "Aerith's Theme",
-		audio: '/audios/aerith-theme.mp3',
-	},
-	{
-		title: 'A Fleeting Dream',
-		audio: '/audios/a-fleeting-dream.mp3',
-	},
-	{
-		title: "Auron's Theme",
-		audio: '/audios/auron-theme.mp3',
-	},
-	{
-		title: 'Main Theme FFVII',
-		audio: '/audios/main-theme-ffvii.mp3',
-	},
-	{
-		title: 'Zanarkand',
-		audio: '/audios/zanarkand.mp3',
-	},
-];
-
 const iconoGpt =
 	'https://static.vecteezy.com/system/resources/previews/022/227/367/original/openai-chatgpt-logo-icon-free-png.png';
 
