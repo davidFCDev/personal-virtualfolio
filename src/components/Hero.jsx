@@ -9,7 +9,7 @@ const Hero = () => {
                     <h3 className="text-[35px] sm:text-[20px] md:text-[35px] font-light">hi, I'm</h3>
                     <h2 className="text-[60px] sm:text-[40px] md:text-[60px] font-bold"><span className='h1-cl'>D</span>avid</h2>
                     <h2 className="text-[60px] sm:text-[40px] md:text-[60px] font-bold"><span className='h1-cl'>F</span>ernández</h2>
-                    <p className="tagline">Front End developer && code lover</p>
+                    <p className="tagline">FullStack developer && code lover</p>
                 </div>
             </div>
         </section>

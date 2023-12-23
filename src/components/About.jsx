@@ -17,7 +17,7 @@ const About = () => {
 				<div className='text-container'>
 					<div className='caption flex flex-col gap-7'>
 						<h1 className='section-ttl text-center'>
-							<b>&lt;h1&gt;&nbsp;</b>&nbsp;&nbsp;frontEnd
+							<b>&lt;h1&gt;&nbsp;</b>&nbsp;&nbsp;fullStack
 							<span className='text-secondary'>Dev&nbsp;&nbsp;</span>
 							<b>&nbsp;&lt;/h1&gt;</b>
 						</h1>

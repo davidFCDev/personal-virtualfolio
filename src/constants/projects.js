@@ -25,6 +25,30 @@ export const PROJECTS = [
 	},
 	{
 		id: 3,
+		title: 'Landing page Crypto Lockpay',
+		description: 'Website for crypto locker',
+		image: [
+			'/images/lockpay.webp',
+			'/images/lockpay2.webp',
+			'/images/lockpay3.webp',
+		],
+		web: 'https://landing-crypto-figma.netlify.app/',
+		github: 'https://github.com/davidFCDev/figma-crypto-clone',
+	},
+	{
+		id: 4,
+		title: 'Figma clone university',
+		description: 'Website for universities search',
+		image: [
+			'/images/schools.webp',
+			'/images/schools2.webp',
+			'/images/schools3.webp',
+		],
+		web: 'https://figma-university.netlify.app/',
+		github: 'https://github.com/davidFCDev/figma-schools-page',
+	},
+	{
+		id: 5,
 		title: 'Landing page Crypto',
 		description: 'Website for crypto currency',
 		image: [
@@ -36,7 +60,7 @@ export const PROJECTS = [
 		github: 'https://github.com/davidFCDev/base-cola',
 	},
 	{
-		id: 4,
+		id: 6,
 		title: 'Forum R&M React',
 		description: 'Context, api, authentication, CRUD...',
 		image: ['/images/foro.webp', '/images/foro2.webp', '/images/foro3.webp'],
@@ -44,7 +68,7 @@ export const PROJECTS = [
 		github: 'https://github.com/davidFCDev/foro-reactjs',
 	},
 	{
-		id: 5,
+		id: 7,
 		title: 'Macros project React',
 		description: 'Macronutrients calculator app. No responsive. api_key needed',
 		image: [
@@ -56,7 +80,7 @@ export const PROJECTS = [
 		github: 'https://github.com/davidFCDev/macrofit-react-app',
 	},
 	{
-		id: 6,
+		id: 8,
 		title: 'Tech test on React',
 		description: 'React-router, redux. TheMOVIEdb api',
 		image: [
@@ -68,7 +92,7 @@ export const PROJECTS = [
 		github: 'https://github.com/davidFCDev/Prueba-tecnica',
 	},
 	{
-		id: 7,
+		id: 9,
 		title: 'Project React',
 		description: 'Netflix clone with TheMOVIEdb api',
 		image: [
@@ -80,7 +104,7 @@ export const PROJECTS = [
 		github: 'https://github.com/davidFCDev/tenflix-api-react',
 	},
 	{
-		id: 8,
+		id: 10,
 		title: 'Random project React',
 		description: 'PS5 menu with animations',
 		image: ['/images/ps5.webp', '/images/ps52.webp', '/images/ps53.webp'],
@@ -88,7 +112,7 @@ export const PROJECTS = [
 		github: 'https://github.com/davidFCDev/menu-ps5-react',
 	},
 	{
-		id: 9,
+		id: 11,
 		title: 'Sport site React',
 		description: 'Sport website ready to use',
 		image: [
@@ -100,7 +124,7 @@ export const PROJECTS = [
 		github: 'https://github.com/davidFCDev/sport-web-react',
 	},
 	{
-		id: 10,
+		id: 12,
 		title: 'eCommerce React',
 		description: 'eCommerce with shop and auth',
 		image: [
@@ -111,12 +135,4 @@ export const PROJECTS = [
 		web: 'https://fir-shopping-8e43d.firebaseapp.com/',
 		github: 'https://github.com/davidFCDev/app-react-firebase',
 	},
-	// {
-	// 	id: 11,
-	// 	title: '',
-	// 	description: '',
-	// 	image: '',
-	// 	web: '',
-	// 	github: '',
-	// },
 ];

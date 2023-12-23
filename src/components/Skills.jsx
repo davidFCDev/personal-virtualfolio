@@ -70,7 +70,7 @@ const Skills = () => {
 					>
 						<li className='card' ref={ref0}>
 							<img
-								src='/images/iconoAngular.png'
+								src='/images/iconoJava.png'
 								alt='typescript'
 								className='img'
 							/>
@@ -82,7 +82,7 @@ const Skills = () => {
 										<TbPoint className='text-xl text-green-400' />
 									</span>
 								</div>
-								<p className='p'>Angular</p>
+								<p className='p'>Java HackaBoss bootcamp</p>
 							</div>
 						</li>
 					</motion.div>
@@ -92,16 +92,16 @@ const Skills = () => {
 					>
 						<li className='card' ref={ref1}>
 							<img
-								src='/images/iconoTypescript.png'
-								alt='typescript'
+								src='/images/iconoAngular.png'
+								alt='angular'
 								className='img'
 							/>
 							<div className='textBox'>
 								<div className='textContent'>
-									<p className='h1'>Typescript course</p>
+									<p className='h1'>Angular course</p>
 									<span className='span'>8 month ago</span>
 								</div>
-								<p className='p'>Focus in data typing</p>
+								<p className='p'>Made some eCommerce</p>
 							</div>
 						</li>
 					</motion.div>
