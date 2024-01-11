@@ -1,5 +1,17 @@
 export const PROJECTS = [
 	{
+		id: 0,
+		title: 'eCommerce Medusajs',
+		description: 'La Fuerza del Alma eCommerce',
+		image: [
+			'/images/ecommerce.webp',
+			'/images/ecommerce2.webp',
+			'/images/ecommerce3.webp',
+		],
+		web: 'https://www.lafuerzadelalma.com/',
+		github: 'https://github.com/lfdadev?tab=repositories',
+	},
+	{
 		id: 1,
 		title: 'Static website React',
 		description: 'Puzzle Madriz restaurant',
@@ -122,17 +134,5 @@ export const PROJECTS = [
 		],
 		web: 'https://sport-web.netlify.app/',
 		github: 'https://github.com/davidFCDev/sport-web-react',
-	},
-	{
-		id: 12,
-		title: 'eCommerce React',
-		description: 'eCommerce with shop and auth',
-		image: [
-			'/images/ecommerce.webp',
-			'/images/ecommerce2.webp',
-			'/images/ecommerce3.webp',
-		],
-		web: 'https://fir-shopping-8e43d.firebaseapp.com/',
-		github: 'https://github.com/davidFCDev/app-react-firebase',
 	},
 ];
